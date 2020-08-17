@@ -4,4 +4,8 @@ public with sharing class TreinamentoHelper {
     public TreinamentoHelper() {
 
     }
+
+    public static List<Treinamento__c> getTreinamentoById(ID treinamentoId) {
+        return [SELECT Id FROM Treinamento__c];
+    }
 }
